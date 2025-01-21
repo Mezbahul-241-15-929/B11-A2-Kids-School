@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    /* Colors */
+    --primary-color: rgb(254, 163, 1);
+    --secend-color: rgb(1, 172, 253);
+    --third-color: rgb(5, 212, 223);
+    --four-color: rgb(93, 88, 239);
+    --background-color: #f4f4f9;
+    /* Light grey */
+    --text-color: #333333;
+    /* Dark grey */
+    --accent-color: #e74c3c;
+    /* Red */
+
+    /* Fonts */
+    --font-family-primary: "Quicksand", serif;
+    --font-family-secend: "Work Sans", serif;
+    --font-family-third: "Roboto", sans-serif;
+    --font-family-four: "Merriweather", serif;
+
+    /* Font sizes */
+    --font-size-base: 16px;
+    --font-size-large: 1.25rem;
+    /* 20px */
+    --font-size-small: 0.875rem;
+    /* 14px */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Work Sans", serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.main-section {
+    padding: 0 140px;
+}
+
+/* Navber css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 11px;
+    cursor: pointer;
+}
+
+.logo p {
+    color: rgb(17, 17, 17);
+    font-family: var(--font-family-primary);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 32px;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+}
+
+.title1 {
+    color: var(--primary-color);
+    font-family: var(--font-family-primary);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.title2 {
+    color: var(--secend-color);
+    font-family: var(--font-family-primary);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.title3 {
+    color: var(--third-color);
+    font-family: var(--font-family-primary);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.title4 {
+    color: var(--four-color);
+    font-family: var(--font-family-primary);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.btn1 {
+    background-color: var(--primary-color);
+    width: 197px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    cursor: pointer;
+
+    /* btn1>p */
+    color: rgb(255, 255, 255);
+    font-family: var(--font-family-primary);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* Hero Section css */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero .left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    padding: 122px 0 122px 0;
+    width: 54%;
+
+}
+
+
+
+.left>h1,
+span {
+    font-family: var(--font-family-primary);
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 61px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.ti5 {
+    color: var(--primary-color);
+}
+
+.ti6 {
+    color: var(--secend-color);
+}
+
+.btn2 {
+    background-color: black;
+    width: 197px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    cursor: pointer;
+
+    /* btn2>p */
+    color: white;
+    font-family: var(--font-family-primary);
+    font-size: 20px;
+    font-weight: 600;
+}
