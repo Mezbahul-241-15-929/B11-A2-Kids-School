@@ -129,6 +129,10 @@
     font-weight: 600;
 }
 
+.menu-icon{
+    display: none;
+}
+
 
 /* Hero Section css */
 .hero {
@@ -180,16 +184,33 @@ span {
 }
 
 
-/* Hero section responsive */
+/* Hero & Navbar section responsive */
 
 @media (max-width:500px) {
+    /* .navbar{
+        display: none;
+    } */
+     .logo>p,.menu,.btn1{
+        display: none;
+     }
+     .navbar{
+        box-sizing: border-box;
+        border-bottom: 0.5px solid rgb(254, 163, 1);
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+     }
+     .menu-icon{
+        display: inline;
+        font-size: 36px;
+     }
+
+    /* Hero secton */
     .main-section{
         padding: 0;
     }
-    
-    .navbar{
-        display: none;
-    }
+
     .hero {
       flex-direction: column-reverse;
       justify-content: center;
