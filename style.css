@@ -183,8 +183,183 @@ span {
     font-weight: 600;
 }
 
+/* curriculum sectioncss */
+.curriculam{
+    background: url(assets/bg.png);
+}
+.curri-main{
+    padding: 60px 0px 60px 0px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    
+    background-size: 100%;
+    margin: 0 120px;
+}
 
-/* Hero & Navbar section responsive */
+.curr-title>p{
+    color: rgb(0, 0, 0);
+font-family: Quicksand;
+font-size: 46px;
+font-weight: 700;
+text-align: center;
+}
+
+.cards{
+    display: flex;
+    gap: 30px;
+}
+
+.card{
+    width: 367.8px;
+height: 450px;
+padding: 52px 40px 58px 40px;
+
+    text-align: center;
+    box-sizing: border-box;
+border: 0.94px solid rgb(222, 245, 255);
+border-radius: 18.86px;
+box-shadow: inset 0px 0px 19.16px 0.64px rgba(0, 0, 0, 0.05);
+
+}
+
+.card1{
+background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+
+.card2{
+background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+
+.card3{
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);}
+
+.card>h1{
+    color: rgb(32, 32, 32);
+font-family: Quicksand;
+font-size: 24.52px;
+font-weight: 700;
+text-align: center;
+padding: 25px 0 25px 0;
+}
+
+.card>p{
+    color: rgb(128, 128, 128);
+font-family: Quicksand;
+font-size: 15.09px;
+font-weight: 500;
+text-align: center;
+padding: 0 0 30px 0;
+}
+
+.card>a{
+    text-decoration: none;
+font-family: Quicksand;
+font-size: 15.09px;
+font-weight: 700;
+}
+
+.read1{
+    color: rgb(100, 200, 255);
+}
+.read2{
+    color: rgb(240, 170, 0);
+}
+.read3{
+    color: rgb(135, 0, 255);
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon{
+    border-radius: 50%;
+background: rgb(254, 163, 1);
+font-size: 40px;
+width: 60px;
+height: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+}
+/* Footer section css */
+.footer{
+    
+    background: rgb(1, 172, 253);
+    padding: 123px 0 180px 0;
+}
+
+.footer-main{
+    margin: 0 120px;
+    display: flex;
+    gap: 15px;
+    justify-content: space-around;
+}
+.f-left {
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    gap: 35px;
+}
+.f-midle{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.menu-list3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.menu-list3 li{
+    list-style: none;
+    text-decoration: none;
+}
+.menu-list3 li a{
+    color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 20px;
+font-weight: 500;
+text-decoration: none;
+
+}
+
+.imgtext{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.imgtext>img{
+    width: 82.9px;
+height: 81.65px;
+}
+
+.f-right{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.imgtext>h1  , .f-midle>h1 ,.f-right>h1{
+    color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 42px;
+font-weight: 700;
+}
+
+.f-left>p {
+    color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 20px;
+}
+
+
+
+/* responsive */
 
 @media (max-width:500px) {
     /* .navbar{
@@ -248,6 +423,64 @@ span {
         height: 42px;
         border-radius: 8px;
         font-size: 16px;
+    }
+
+    /* Curriculam */
+
+    .curri-main{
+        padding: 60px 0px 60px 0px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+        margin: 0;
+        
+    }
+    .curr-title>p{
+    font-size: 30px;
+    }
+
+    .cards{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card{
+        width: 367.8px;
+    height: 400px;
+    padding: 30px 0 30px 0;
+    }
+    .icons{
+        display: none;
+    }
+
+    /* Footer */
+    .footer{ 
+        padding: 30px 15px 30px 15px;
+    }
+    
+    .footer-main{
+        margin: 0 0;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .f-left {
+        width: 100%;
+        gap: 15px;
+    }
+    .f-midle {
+        gap: 15px;
+    }
+    .f-right {
+        gap: 15px;
+    }
+
+    .imgtext>h1  , .f-midle>h1 ,.f-right>h1{
+    font-size: 35px;
     }
 
 }
