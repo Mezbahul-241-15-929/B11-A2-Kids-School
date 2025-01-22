@@ -275,6 +275,7 @@ font-weight: 700;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
 }
 
 .icon{
@@ -428,7 +429,7 @@ padding: 23px 23px;
 .footer{
     
     background: rgb(1, 172, 253);
-    padding: 123px 0 180px 0;
+    padding: 100px 0 120px 0;
 }
 
 .footer-main{
@@ -481,6 +482,10 @@ height: 81.65px;
     flex-direction: column;
     gap: 32px;
 }
+
+.social>img{
+    cursor: pointer;
+}
 .imgtext>h1  , .f-midle>h1 ,.f-right>h1{
     color: rgb(255, 255, 255);
 font-family: Quicksand;
@@ -494,7 +499,13 @@ font-family: Quicksand;
 font-size: 20px;
 }
 
-
+.scrolling{
+    font-size: 25px;
+    padding: 5px 0;
+    font-weight: 600;
+    color: white;
+    background-color: var(--secend-color);
+}
 
 /* responsive */
 
