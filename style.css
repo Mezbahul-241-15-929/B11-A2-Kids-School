@@ -208,6 +208,8 @@ text-align: center;
 
 .cards{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 30px;
 }
 
@@ -578,6 +580,8 @@ font-size: 20px;
     .curri-main{
         padding: 60px 0px 60px 0px;
         display: flex;
+        justify-content: space-around;
+        
         flex-direction: column;
         row-gap: 50px;
         margin: 0;
